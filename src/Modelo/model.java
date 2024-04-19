@@ -5,15 +5,15 @@ public class model {
 	private String title;
 	private String author;
 	private String resume;
-	private int year;
+	private String link;
 	
 	//Constructor para el objeto
 	
-	public model(String title, String author, String resume, int year) {
+	public model(String title, String author, String resume, String link) {
 		this.title = title;
 		this.author = author;
 		this.resume = resume;
-		this.year = year;
+		this.link = link;
 	}
 	
 	
@@ -30,14 +30,14 @@ public class model {
 		return resume;
 	}
 	
-	public int getYear() {
-		return year;
+	public String getLink() {
+		return link;
 	}
 	
-	public void setDocument(String title, String author, String resume, int year) {
+	public void setDocument(String title, String author, String resume, String link) {
 		this.title = title;
 		this.author = author;
 		this.resume = resume;
-		this.year = year;
+		this.link = link;
 	}
 }
