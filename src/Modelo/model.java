@@ -16,7 +16,6 @@ public class model {
 		this.link = link;
 	}
 	
-	
 	//Metodos del modelo
 	public String getTitle() {
 		return title;

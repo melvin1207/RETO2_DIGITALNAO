@@ -4,14 +4,13 @@ import java.io.IOException;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-
 import org.json.JSONException;
-
 import Controlador.controlador;
 
 
 public class vista {
 	public static void main(String[] args) {
+		controlador controlInstance = new controlador();
 		//Se hace un espacio donde se generaran todos los objetos visuales
 		JPanel space = new JPanel();
 		
@@ -57,7 +56,7 @@ public class vista {
 		btnSearch.addActionListener(e -> {
 			try {
 				try {
-					controlador.googleSchoolarData(textSearch.getText(), tableModel);
+					controlInstance.GoogleScholar(textSearch.getText(), tableModel);
 				} catch (JSONException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
